@@ -36,11 +36,10 @@ public class ComputerPigPlayer extends PigPlayer {
      * @return true to roll again, false to stop
      */
     @Override
-    public boolean decideIfShouldRoll(int turnNumber, int rollNumber, int
-            poolSize, int myScore, int opponentsScore) {
-        // Current strategy is to only roll once. Come up with a better strategy for the computer
-        // player and implement it here.
-        if (rollNumber == 1) return true;
+    public boolean decideIfShouldRoll(int turnNumber, int rollNumber, int poolSize, int myScore, int opponentsScore)
+    {
+
+        if (rollNumber == 0) return true;
         else return false;
     }
 }

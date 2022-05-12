@@ -6,13 +6,15 @@
  * @version 1.0
  */
 abstract public class PigPlayer {
-    private String name; // player's name
+    private String name;    // player's name
+    private int score;
     /**
      * The main constructor for <code>PigPlayer</code>.
      * @param name The <code>PigPlayer</code>'s name
      */
     public PigPlayer(String name) {
         this.name = name;
+        this.score =0;
     }
     /**
      * Accessor for the <code>PigPlayer</code>'s name.
@@ -21,6 +23,7 @@ abstract public class PigPlayer {
     public String getName() {
         return name;
     }
+    public int getScore(){return score;}
     /**
      * Alert the <code>PigPlayer</code> that its turn is beginning. This
      method
